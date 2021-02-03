@@ -8,4 +8,5 @@ import (
 
 func main() {
 	fmt.Println("Hello world from Go!")
+	fmt.Println(quote.Glass())
 }

@@ -17,3 +17,6 @@ func Hail(name string) (string, error) {
 	// var message string (":=" below does the same. It declares and initialize a variable in one line. The value in right determines the "type")
 	return message, nil
 }
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}

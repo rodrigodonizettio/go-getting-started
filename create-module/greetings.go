@@ -1,6 +1,9 @@
 package greetings
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 //   FuncName(pars)       returnType {
 func Hail(name string) string {

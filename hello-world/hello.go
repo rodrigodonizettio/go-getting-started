@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 
 	"rodrigodonizettio.com/greetings"
 	"rsc.io/quote"

@@ -16,5 +16,16 @@ func main() {
 	log.SetPrefix("Log from greetings.go: ")
 	log.SetFlags(0)
 
+	message, err := greetings.Hail("donizetti")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(message)
+
+	//The variables "message" and "err" were already assigned in above statement
+	message, err = greetings.Hail("")
+	if err != nil {
+		log.Fatal(err)
+	}
 	fmt.Println(message)
 }

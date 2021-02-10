@@ -22,6 +22,12 @@ func main() {
 	}
 	fmt.Println(message)
 
+	names := []string{"Princípe", "Dorotéia", "Clarice"}
+	messages, err1 := greetings.Hails(names)
+	if err1 != nil {
+		log.Fatal(err1)
+	}
+	fmt.Println(messages)
 
 	//The variables "message" and "err" were already assigned in above statement
 	message, err = greetings.Hail("")

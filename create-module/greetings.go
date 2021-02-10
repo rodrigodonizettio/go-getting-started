@@ -19,6 +19,18 @@ func Hail(name string) (string, error) {
 	return message, nil
 }
 
+func Hails(names []string) (map[string]string, error) {
+	messages := make(map[string]string)
+	for _, name := range names {
+		message, err := Hail(name)
+		if err != nil {
+			return nil, err
+		}
+		messages[name] = message
+	}
+	return messages, nil
+}
+
 func randomHail() string {
 	formats := []string{
 		"Hail to the king, %v!",

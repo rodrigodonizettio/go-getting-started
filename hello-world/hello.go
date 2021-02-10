@@ -22,10 +22,12 @@ func main() {
 	}
 	fmt.Println(message)
 
+
 	//The variables "message" and "err" were already assigned in above statement
 	message, err = greetings.Hail("")
 	if err != nil {
+		//IMPORTANT: If an error occurs the code execution is stopped, so the next lines won't be executed
 		log.Fatal(err)
 	}
-	fmt.Println(message)
+	fmt.Println(message) //This line won't be executed if an error occurs (and it will)
 }

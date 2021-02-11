@@ -15,3 +15,10 @@ func TestHailWithName(t *testing.T) {
 	}
 }
 
+func TestHailWithEmpty(t *testing.T) {
+	name := ""
+	msg, err := Hail(name)
+	if msg != "" || err == nil {
+		t.Fatalf(`Hail(%v) = %q, %v, want ""`, name, msg, err)
+	}
+}

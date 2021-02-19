@@ -1,6 +1,8 @@
 // Protobuf version spec.
 syntax = "proto3";
 
+option go_package = "proto;pb";
+
 // message <NameOfTheMessage>
 message Cpu {
   // <data-type> name_of_field = tag_number

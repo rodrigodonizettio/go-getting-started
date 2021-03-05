@@ -1,0 +1,16 @@
+// Protobuf version spec.
+syntax = "proto3";
+
+option go_package = "proto;pb";
+
+message Keyboard {
+  enum Layout {
+    UNKNOWN = 0;
+    QWERTY = 1;
+    QWERTZ = 2; //Germany
+    AZERTY = 3; //France
+  }
+
+  Layout layout = 1;
+  bool backlit = 2; //has LEDs under the keys
+}

@@ -20,6 +20,15 @@ dependencies {
     implementation group: 'io.grpc', name: 'grpc-all', version: '1.25.0'
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs 'build/generated/source/proto/main/grpc'
+            srcDirs 'build/generated/source/proto/main/java'
+        }
+    }
+}
+
 protobuf {
     // Configure the protoc executable
     protoc {

@@ -18,5 +18,12 @@ dependencies {
 
     // https://mvnrepository.com/artifact/io.grpc/grpc-all
     implementation group: 'io.grpc', name: 'grpc-all', version: '1.25.0'
+}
 
+protobuf {
+    // Configure the protoc executable
+    protoc {
+        // Download from repositories
+        artifact = 'com.google.protobuf:protoc:3.10.1'
+    }
 }

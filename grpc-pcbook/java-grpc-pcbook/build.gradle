@@ -23,7 +23,12 @@ dependencies {
 protobuf {
     // Configure the protoc executable
     protoc {
-        // Download from repositories
         artifact = 'com.google.protobuf:protoc:3.10.1'
+    }
+
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.25.0'
+        }
     }
 }

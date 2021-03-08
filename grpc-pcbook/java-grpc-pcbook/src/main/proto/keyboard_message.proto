@@ -4,6 +4,8 @@ syntax = "proto3";
 option go_package = "proto;pb";
 
 option java_package = "br.com.rodrigodonizettio.pcbook.pb";
+option java_multiple_files = true;
+
 message Keyboard {
   enum Layout {
     UNKNOWN = 0;

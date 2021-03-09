@@ -26,7 +26,7 @@
           <option name="location" value="jar://$APPLICATION_PLUGINS_DIR$/protobuf-editor.jar!/include" />
         </ImportPathEntry>
         <ImportPathEntry>
-          <option name="location" value="file://$PROJECT_DIR$/../proto" />
+          <option name="location" value="file://$PROJECT_DIR$/src/main/proto" />
         </ImportPathEntry>
       </list>
     </option>

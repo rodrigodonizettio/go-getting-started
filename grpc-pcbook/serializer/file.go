@@ -7,7 +7,7 @@ import (
 	"google.golang.org/protobuf/proto"
 )
 
-//Writes Protocol Buffer message to binary file
+//Writes Protocol Buffer message to binary file (ProtoMessage -> Binary)
 func WriteProtobufToBinaryFile(message proto.Message, filename string) error {
 	data, err := proto.Marshal(message)
 	if err != nil {

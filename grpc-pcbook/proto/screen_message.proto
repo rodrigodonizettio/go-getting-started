@@ -7,9 +7,9 @@ option java_package = "br.com.rodrigodonizettio.pcbook.pb";
 option java_multiple_files = true;
 
 message Screen {
-  enum Resolution {
-    WIDTH = 0;
-    HEIGHT = 1;
+  message Resolution {
+    uint32 width = 1;
+    uint32 height = 2;
   }
 
   enum Panel {

@@ -2,10 +2,16 @@ package sample
 
 import (
 	"math/rand"
+	"time"
 
 	pb "br.com.rodrigodonizettio/grpc-pcbook/pb/proto"
 	"github.com/google/uuid"
 )
+
+//This function will always be called before the others and will change the seed to always generate different values
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
 
 //   Name(params)           returnType {
 func RandomKeyboardLayout() pb.Keyboard_Layout {
